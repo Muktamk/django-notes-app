@@ -1,10 +1,8 @@
 pipeline {
     
-    agent { 
-        node{
-            label "dev"
-            
-        }
+    agent any
+    tools {
+        git 'git'
     }
     
     stages{
