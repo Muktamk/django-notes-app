@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Build & Test"){
             steps{
-                sh "docker build . -t notes-app-jenkins:latest"
+                sh "docker build . -t mukta178/node_js:latest"
             }
         }
         stage("Push to DockerHub"){
